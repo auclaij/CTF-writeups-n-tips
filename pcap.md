@@ -20,5 +20,5 @@ What to do with wireshark:<br>
 3. To do so, right click the category and click ```Apply as Filter -> Selected```
 
 ### quick wins
-Files transferred via HTTP can be extracted from a PCAP in Wireshark with ```File -> Export Objects -> HTTP option```
+Files transferred via HTTP can be extracted from a PCAP in Wireshark with ```File -> Export Objects -> HTTP option```<br>
 Try searching for the flag in all TCP traffic with the following filter: ```frame contains flag```
