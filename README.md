@@ -1,4 +1,4 @@
-## hackademy-writeup
+## hackademy-writeup ☠
 
 Every year, I participate in the NorthSec CTF, and every year, when I come face to face with the hackademy track, my mind just goes blank.
 This writeup is intended for personal use in the same track next year, but hey, I made the repo public if it can help anyone!
