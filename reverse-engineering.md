@@ -3,7 +3,7 @@
 ### strings
 Search the binary ```strings -a ./program```
 
-search for strings of different formats:
+Search for strings of different formats:
 ```
 -e s -> single-7-bit-byte characters (default)
 -e S -> single-8-bit-byte characters
@@ -12,7 +12,7 @@ search for strings of different formats:
 -e B -> 32-bit bigendian
 -e L -> 32-bit littleendian
 ```
-strings -e b ./program
+```strings -e b ./program```
 
 ### ELF
 Writable/executable sections are of interest? ```readelf --sections ./program```
