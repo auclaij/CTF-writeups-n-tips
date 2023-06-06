@@ -1,7 +1,7 @@
 ## hackademy-writeup ☠
 
-Every year, I participate in the NorthSec CTF, and every year, when I come face to face with the hackademy track, my mind just goes blank.
-This writeup is intended for personal use in the same track next year, but hey, I made the repo public if it can help anyone!
+Every year, in the NorthSec CTF, and every year, when I come face to face with the hackademy track, I just forget the basics.
+This writeup is intended for my personal use in this same track next year (feel free to use this tho)
 
 ### Automatization 101
 Check source code
