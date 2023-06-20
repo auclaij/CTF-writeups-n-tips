@@ -1,6 +1,6 @@
 ## hackademy-writeup ☠
 
-Every year, in the NorthSec CTF, and every year, when I come face to face with the hackademy track, I just forget the basics.
+Every year, in the NorthSec CTF, when I come face to face with the hackademy track, I just forget the basics.
 This writeup is intended for my personal use in this same track next year (feel free to use this tho)
 
 ### Automatization 101
